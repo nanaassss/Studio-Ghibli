@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Ghibli</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Studio Ghibli</h1>
+  <p id="count"></p>
+</header>
+<div class="bar">
+  <input id="q" type="search" data-i18n-ph="search">
+  <select id="dir"></select>
+  <select id="sort">
+    <option value="year" data-i18n="sYear"></option>
+    <option value="yeard" data-i18n="sYearD"></option>
+    <option value="score" data-i18n="sScore"></option>
+    <option value="title" data-i18n="sTitle"></option>
+    <option value="time" data-i18n="sTime"></option>
+  </select>
+  <button id="favBtn" data-i18n="favs"></button>
+  <button id="modeBtn" type="button"></button>
+  <select id="lang">
+    <option value="pt">PT · Português</option>
+    <option value="en">EN · English</option>
+  </select>
+</div>
+<main id="grid"></main>
+<dialog id="dlg"></dialog>
+<script src="app.js"></script>
+</body>
+</html>
